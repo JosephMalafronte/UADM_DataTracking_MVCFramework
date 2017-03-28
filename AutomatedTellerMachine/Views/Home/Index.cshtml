@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "School Helper";
+}
+<script src="~/Scripts/gpa.js">
+</script>
+
+
+<div class="jumbotron">
+    <h1>@ViewBag.Title</h1>
+    <h2>This website </h2>
+    
+
+    <div class ="row">
+        <div class="col-md-4">
+            <div class="jumboContainer">
+                <p>@Html.ActionLink("GPA CALCULATOR", "GPACalculator", "Home", null, new { @class = "btn btn-primary btn-lg" })</p>
+                <p>Calculate your Grade Point Average for the semester using the plus/minus system!</p>
+             </div>
+        </div>
+        <div class="col-md-4">
+            <div class="jumboContainer">
+                <p>@Html.ActionLink("SCHEDULE BUILDER", "GPACalculator", "Home", null, new { @class = "btn btn-primary btn-lg" })</p>
+                <p>Create a class schedule that avoids conflicting class time and reports overall hours taken!</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="jumboContainer">
+                <p>@Html.ActionLink("GPA CALCULATOR", "GPACalculator", "Home", null, new { @class = "btn btn-primary btn-lg" })</p>
+                <p>Calculate your Grade Point Average for the semester using the plus/minus system!</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Register</h2>
+        <p>
+            Open an account with us
+        </p>
+        <p>@Html.ActionLink("Register", "Register", "Account", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Log In</h2>
+        <p>Access your existing account</p>
+        <p>@Html.ActionLink("Log In", "Login", "Account", null, new { @class = "btn btn-default" })</p>
+    </div>
+</div>
+
+
+@section scripts {
+    <script>var testing = true;</script>
+
+}
+
