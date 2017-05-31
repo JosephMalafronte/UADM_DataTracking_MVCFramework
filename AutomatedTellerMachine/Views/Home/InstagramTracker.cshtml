@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Data Tracking";
+}
+
+
+<head>
+
+    <script src="~/Scripts/knockout-3.4.2.js" type="text/javascript"></script>
+    <script src="~/Scripts/p5.js" type="text/javascript"></script>
+    <script src="~/Scripts/p5.dom.js" type="text/javascript"></script>
+    <script src="~/Scripts/p5.sound.js" type="text/javascript"></script>
+    <script src="~/Scripts/sketch.js" type="text/javascript"></script>
+
+
+
+    <link href="~/Content/Styles/retweetTrackerStyle.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="jumboHead">
+            <div class="jumboHeadPic"><img src="~/Content/Images/UADM_logo_noBackground.png" /></div>
+            <h1>@ViewBag.Title</h1>
+        </div>
+
+        <br />
+
+        <div id="sketch-holder">
+            <!-- Sketch placement -->
+        </div>
+
+        <br />
+        <div class="bottomRowHolder">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-1">
+                    <div class="checkRtText">
+                        <h4> Include Retweets by UADM account?</h4>
+                    </div>
+                    <div class="switchHolder1">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="RtStatus" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                            <label class="onoffswitch-label" for="myonoffswitch">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="keyHolder">
+                        <img src="~/Content/Images/KeyV02.png" height="100" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br /> <br />
+        <div class="csvButtonHolder">
+            <input id="clickMe" type="button" value="Download CSV" class="button-success" onclick="downloadCSV();" />
+        </div>
+
+
+    </div>
+</body>
+
+
+<div class="row">
+    <div class="col-md-3">
+        <p>@Html.ActionLink("Log In", "Login", "Account", null, new { @class = "btn btn-default" })</p>
+        <p>Access your existing account</p>
+    </div>
+    <div class="col-md-3">
+        <p>@Html.ActionLink("Register", "Register", "Account", null, new { @class = "btn btn-default" })</p>
+        <p>Create a new account</p>
+    </div>
+</div>
+
+
+@section scripts {
+    <script>var testing = true;</script>
+
+}
+
+<script type="text/javascript">
+    var viewModel = {
+        firstName: ko.observable("Bert")
+    };
+    ko.applyBindings(viewModel);
+
+
+</script>
+

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedTellerMachine", "AutomatedTellerMachine\AutomatedTellerMachine.csproj", "{D3A71218-9329-4695-90FF-3D0DD5EB5EE2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UADM_Tracker", "AutomatedTellerMachine\UADM_Tracker.csproj", "{D3A71218-9329-4695-90FF-3D0DD5EB5EE2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedTellerMachine.Tests", "AutomatedTellerMachine.Tests\AutomatedTellerMachine.Tests.csproj", "{8E0E5AC9-3AB6-4E4C-9F40-953F0A09111D}"
 EndProject

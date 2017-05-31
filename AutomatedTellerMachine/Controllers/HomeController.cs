@@ -32,7 +32,21 @@ namespace AutomatedTellerMachine.Controllers
             return View();
         }
 
+        public ActionResult Schedule()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
         public ActionResult Contact()
+        {
+            ViewBag.TheMessage = "Having Trouble? Send us a message!";
+
+            return View();
+        }
+
+        public ActionResult TwitterTracker()
         {
             ViewBag.TheMessage = "Having Trouble? Send us a message!";
 
@@ -54,7 +68,7 @@ namespace AutomatedTellerMachine.Controllers
 
         public ActionResult Serial(string letterCase)
         {
-            var serial = "ASPNETMVC5ATM1";
+            var serial = "UADMDataTracker V01.4";
             if(letterCase == "lower")
             {
                return Content(serial.ToLower());

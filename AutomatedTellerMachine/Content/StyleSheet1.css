@@ -1,9 +1,20 @@
-﻿
-
-
-
+﻿@font-face {
+    font-family: "UADMfont";
+    src: url('/Content/Fonts/multicolore.otf');
+}
 .jumboContainer{
     background-color:white;
     padding: 10px;
     box-shadow: 0 0 5px 10px #555;
+}
+.jumboHead{
+    text-align: center;
+}
+.jumboHead h1{
+    margin: 0;
+    padding: 0;
+    font-family: "UADMfont";
+}
+.jumboHeadPic{
+    padding: 0px 0px 0px 0px;
 }

@@ -93,9 +93,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AutomatedTellerMachine\AutomatedTellerMachine.csproj">
+    <ProjectReference Include="..\AutomatedTellerMachine\UADM_Tracker.csproj">
       <Project>{D3A71218-9329-4695-90FF-3D0DD5EB5EE2}</Project>
-      <Name>AutomatedTellerMachine</Name>
+      <Name>UADM_Tracker</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

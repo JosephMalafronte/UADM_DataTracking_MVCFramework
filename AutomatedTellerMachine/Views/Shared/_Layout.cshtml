@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - MVC Bank</title>
+    <title>@ViewBag.Title - UADM</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Styles.Render("~/Content/StyleSheet1.css")
@@ -18,13 +18,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("School Helper", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("UADM Data", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("GPA Calc", "GPACalculator", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    @*<li>@Html.ActionLink("GPA Calc", "GPACalculator", "Home")</li>*@
+                    <li>@Html.ActionLink("Twitter Tracker", "TwitterTracker", "Home")</li>
+                    <li>@Html.ActionLink("Instagram Tracker", "InstagramTracker", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -34,7 +35,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - MVC Bank - @Html.Action("Serial", "Home", new { letterCase = "lower" })</p>
+            <p>&copy; @DateTime.Now.Year - Joseph Malafronte - @Html.Action("Serial", "Home", new { letterCase = "lower" })</p>
         </footer>
     </div>
 
